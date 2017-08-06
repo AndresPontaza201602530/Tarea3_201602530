@@ -4,7 +4,7 @@ package TareaIPC;
 import java.util.Scanner;
 
 /**
- *
+ *Pruebas respectivas para la palabra palindroma
  * @author Andres
  */
 public class Polindroma {

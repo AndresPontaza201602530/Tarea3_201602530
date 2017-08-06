@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Trabajo Principal Finalizado 
  */
 package tareaipc;
 
@@ -63,7 +61,7 @@ public class MENU {
                         arreglo[i]=user;
     }
          
-                int m= in.getInt("Desea Mostra usuarios si es asi pulse 1 encaso contrario cualquier otro numero? ");
+                int m= in.getInt("Desea mostrar los usuarios registrados si es asi pulse 1 encaso contrario cualquier otro numero? ");
                  
                 
                 while(m==1){
@@ -137,6 +135,33 @@ public class MENU {
 
                         break;
                     case 3:
+                        String array2[];
+                        array2= new String[5];
+                        array2[0]="Andres";
+                        array2[1]="Jose";
+                        array2[2]="Juan";
+                        array2[3]="Paola";
+                        array2[4]="Pablo";
+         
+       System.out.println("");
+       System.out.println("");
+       System.out.println("");
+       System.out.println("Buscar Usuario");
+       System.out.println("");
+       Scanner leer2= new Scanner(System.in);
+       String buscar=leer2.nextLine();
+        int posicion = -2;
+        for (int inicio=0; inicio<5; inicio++){
+            if(array2[inicio].equals(buscar)){
+                posicion=inicio; 
+            }
+        }
+             if(posicion>=0){
+             System.out.println("Si se encuentra registrado "+array2[posicion]);
+             }
+             else{
+             System.out.println("No se encuentra");
+             }
                         break;
                     case 4:
                    System.out.println(" ");
