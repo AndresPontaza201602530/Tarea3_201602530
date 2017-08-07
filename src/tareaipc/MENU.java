@@ -71,9 +71,10 @@ public class MENU {
                     }
                 m=0;
                 }
-                m= in.getInt("Desea buscar usuarios si es asi pulse 1 encaso contrario cualquier otro numero: ");
+                m= in.getInt("Desea buscar tres usuarios registrados si es asi pulse 1 encaso contrario cualquier otro numero: ");
                  
                 while(m==1){
+                
                 int p2=0;  //Deja espacio 
                 for(p2=0;p2<3;p2++){ 
                 System.out.println("\n");
@@ -87,7 +88,8 @@ public class MENU {
                 System.out.println("");
                 System.out.println("Buscar Usuario");
                 System.out.println("");
-                    Scanner leer2= new Scanner(System.in);
+               
+                Scanner leer2= new Scanner(System.in);
                     String buscar=leer2.nextLine();
                     int posicion = -2;
                         for (int inicio=0; inicio<5; inicio++){
@@ -96,15 +98,15 @@ public class MENU {
                             }
         }
              if(posicion>=0){
-             System.out.println("Si se encuentra es: "+arreglo[posicion]);
+             System.out.println("Si se encuentra registrado "+arreglo[posicion]);
              }
              else{
              System.out.println("No se encuentra");
              }
-             break;
-                }
               
                 }
+                m=0;
+                } 
                 
                 int p=0;  //Deja espacio 
                 for(p=0;p<3;p++){ 
@@ -196,7 +198,7 @@ public class MENU {
                    System.out.println(" ");
                    System.out.println(" ");
                     System.out.println("Palabras Palindromas ");
-        System.out.println("Ingresar Palabra");
+        System.out.println("Ingresar Palabra sin mayusculas o espacios:");
         Scanner pal = new Scanner(System.in);
             //String cop=pal.nextLine();
             //cop=cop.replaceFirst(" ", "");
