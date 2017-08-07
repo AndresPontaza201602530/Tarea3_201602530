@@ -186,6 +186,11 @@ public class TareaIPC {
                 }
                    break;
             case 2:
+                   Scanner ac= new Scanner(System.in);
+    int n1;
+    n1=2;
+    //Pedir dato de entrada 
+    System.out.println(" ");
                    System.out.println(" ");
                    System.out.println(" ");
                    System.out.println(" ");
@@ -195,29 +200,61 @@ public class TareaIPC {
                    System.out.println(" ");
                    System.out.println(" ");
                    System.out.println(" ");
-                   System.out.println(" ");
-                   System.out.println(" ");
-                   System.out.println(" ");
-                   System.out.println(" ");
-                    System.out.println("Palabras Palindromas ");
-        System.out.println("Ingresar Palabra sin mayusculas o espacios:");
-        Scanner pal = new Scanner(System.in);
-            //String cop=pal.nextLine();
-            //cop=cop.replaceFirst(" ", "");
-            String str = pal.nextLine();
-                    int cont = 1;
-                    for (int i = 0; i < str.length(); i++){
-                        if (str.charAt(i) !=str.charAt(str.length()-1-i)){
-                         
-                        cont = 0; break;   
-                    }
-                }
+    System.out.println("Palabras Palindromas");
+     System.out.println("Ingresar Palabras Palindromas:");
+     String frase=ac.nextLine();
+     frase=frase.toLowerCase();
+     
+     //Proceso
+     
+     // Quitar Espacios y caracteres especiales
+     
+    //}
     
-               System.out.println(cont==1 ? "SI ES PALINDROMA!!!" : "NO ES PALINDROMA!!!");
+    //public static boolean esPalindroma (String frase){
+    String aux="";
+     int n=frase.length();
+     for(int i=0; i < n ;i++){
+        if(!(frase.substring(i, i+1).equals(" ")
+                || frase.substring(i, i+1).equals("!") 
+               || frase.substring(i, i+1).equals("¡") 
+                || frase.substring(i, i+1).equals(".") 
+                || frase.substring(i, i+1).equals(";") 
+                || frase.substring(i, i+1).equals(",")
+                || frase.substring(i, i+1).equals("¿")
+                ||frase.substring(i, i+1).equals("?"))){
+               aux +=frase.substring(i, i+1);
+              
+     }
+     }
+     System.out.println(aux);
+   n=aux.length();
+   for(int i=0; i< n /2; i++ ){
+       if(!aux.substring(i, i+1).equals(aux.substring(n -i-1,n-i))){
+    
+     n1=1;
+    
+     }
+       else{
+          n1=0;
+    }
+    } 
+     if (n1==1){
+         System.out.println("No es Palindroma!");
+         System.out.println(" ");
                    System.out.println(" ");
                    System.out.println(" ");
-                   
                   
+     }   
+     if (n1==0){
+         System.out.println("Si es Palindroma!");
+         System.out.println(" ");
+         System.out.println(" ");
+     }
+//}
+
+                  
+       
        
                     
                    break;
