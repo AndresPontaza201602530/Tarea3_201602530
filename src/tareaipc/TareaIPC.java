@@ -227,7 +227,7 @@ public class TareaIPC {
               
      }
      }
-     System.out.println(aux);
+     //System.out.println(aux);
    n=aux.length();
    for(int i=0; i< n /2; i++ ){
        if(!aux.substring(i, i+1).equals(aux.substring(n -i-1,n-i))){
